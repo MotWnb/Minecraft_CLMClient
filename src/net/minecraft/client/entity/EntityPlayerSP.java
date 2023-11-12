@@ -80,6 +80,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
     private float horseJumpPower;
     public float timeInPortal;
     public float prevTimeInPortal;
+    public int currentIndex = 0;
 
     public EntityPlayerSP(Minecraft mcIn, World worldIn, NetHandlerPlayClient netHandler, StatFileWriter statFile)
     {
