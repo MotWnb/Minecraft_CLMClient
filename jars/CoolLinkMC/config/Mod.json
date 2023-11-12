@@ -1,0 +1,30 @@
+{
+  "Logo": {
+    "enable": true,
+    "key": 0
+  },
+  "ModList": {
+    "enable": true,
+    "key": 0
+  },
+  "TitleOverride": {
+    "enable": true,
+    "key": 0
+  },
+  "Sprint": {
+    "enable": false,
+    "key": 47
+  },
+  "AutoAttack": {
+    "enable": true,
+    "key": 19
+  },
+  "Scaffold": {
+    "enable": true,
+    "key": 44
+  },
+  "BlockIn": {
+    "enable": false,
+    "key": 48
+  }
+}

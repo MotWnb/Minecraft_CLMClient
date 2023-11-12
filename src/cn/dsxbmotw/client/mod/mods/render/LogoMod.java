@@ -1,0 +1,23 @@
+package cn.dsxbmotw.client.mod.mods.render;
+
+import cn.dsxbmotw.client.Client;
+import cn.dsxbmotw.client.mod.Mod;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.client.gui.ScaledResolution;
+
+import java.awt.*;
+
+public class LogoMod extends Mod {
+    public LogoMod() {
+        super("Logo");
+    }
+
+    @Override
+    public void render() {
+        ScaledResolution sr= new ScaledResolution(Minecraft.getMinecraft());
+        String text = Client.NAME + " | " + Client.VERSION;
+        FontRenderer font = Minecraft.getMinecraft().fontRendererObj;
+        font.drawString(text, 0, 0, new Color(40, 86, 20).getRGB());
+    }
+}
