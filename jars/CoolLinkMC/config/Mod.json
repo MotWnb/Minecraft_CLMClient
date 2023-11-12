@@ -16,11 +16,11 @@
     "key": 47
   },
   "AutoAttack": {
-    "enable": true,
+    "enable": false,
     "key": 19
   },
   "Scaffold": {
-    "enable": true,
+    "enable": false,
     "key": 44
   },
   "BlockIn": {

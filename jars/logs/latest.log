@@ -264,3 +264,21 @@ java.lang.ClassNotFoundException: com.mojang.realmsclient.gui.screens.RealmsNoti
 [15:41:39] [Client thread/INFO]: Using default channel type
 [15:41:40] [Client thread/INFO]: Started on 19439
 [15:41:40] [Client thread/INFO]: [CHAT] 本地游戏已在端口 19439 上开启
+[15:47:07] [Server thread/INFO]: [Player937: 将 Player937 传送到 71.5，83.0，88.5]
+[15:47:07] [Client thread/INFO]: [CHAT] 将 Player937 传送到 71.5，83.0，88.5
+[15:50:55] [Server thread/INFO]: [Player937: 将 Player937 传送到 71.5，83.0，88.5]
+[15:50:55] [Client thread/INFO]: [CHAT] 将 Player937 传送到 71.5，83.0，88.5
+[15:50:57] [Server thread/INFO]: [Player937: 将 Player937 传送到 71.5，83.0，88.5]
+[15:50:57] [Client thread/INFO]: [CHAT] 将 Player937 传送到 71.5，83.0，88.5
+[15:51:00] [Server thread/INFO]: [Player937: 将 Player937 传送到 71.5，83.0，88.5]
+[15:51:00] [Client thread/INFO]: [CHAT] 将 Player937 传送到 71.5，83.0，88.5
+[16:22:37] [LanServerPinger #1/WARN]: LanServerPinger: No route to host: Datagram send failed
+[16:35:01] [Client thread/INFO]: Stopping!
+[16:35:01] [Client thread/INFO]: SoundSystem shutting down...
+[16:35:02] [Server thread/INFO]: Stopping server
+[16:35:02] [Server thread/INFO]: Saving players
+[16:35:02] [Server thread/INFO]: Saving worlds
+[16:35:02] [Server thread/INFO]: Saving chunks for level '新的世界'/Overworld
+[16:35:02] [Server thread/INFO]: Saving chunks for level '新的世界'/Nether
+[16:35:02] [Server thread/INFO]: Saving chunks for level '新的世界'/The End
+[16:35:02] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
