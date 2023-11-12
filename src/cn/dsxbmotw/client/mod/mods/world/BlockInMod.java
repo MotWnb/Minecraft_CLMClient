@@ -1,5 +1,6 @@
 package cn.dsxbmotw.client.mod.mods.world;
 
+import cn.dsxbmotw.client.Client;
 import cn.dsxbmotw.client.mod.Mod;
 import cn.dsxbmotw.client.mod.api.CalcDirectionYawAndPitch;
 import net.minecraft.client.Minecraft;
@@ -8,6 +9,8 @@ import java.util.Arrays;
 
 
 public class BlockInMod extends Mod {
+    public float yawOld;
+    public float pitchOld;
     public BlockInMod() {
         super("BlockIn");
     }
@@ -15,6 +18,8 @@ public class BlockInMod extends Mod {
     public void update() {
         switch (Minecraft.getMinecraft().thePlayer.currentIndex) {
             case 0:
+                yawOld = Minecraft.getMinecraft().thePlayer.rotationYaw;
+                pitchOld = Minecraft.getMinecraft().thePlayer.rotationPitch;
                 double[] pos = (new double[]{Minecraft.getMinecraft().thePlayer.posX - 1, Minecraft.getMinecraft().thePlayer.posY, Minecraft.getMinecraft().thePlayer.posZ});
                 double[] yawAndPitch = CalcDirectionYawAndPitch.calcPosition(pos);
                 System.out.println(Arrays.toString(yawAndPitch));
@@ -22,7 +27,6 @@ public class BlockInMod extends Mod {
                 float pitch = (float) yawAndPitch[1];
                 Minecraft.getMinecraft().thePlayer.setRotation(yaw, pitch);
                 Minecraft.getMinecraft().thePlayer.currentIndex = 1;
-                Minecraft.getMinecraft().rightClickMouse();
                 break;
             case 1:
                 pos = (new double[]{Minecraft.getMinecraft().thePlayer.posX + 1, Minecraft.getMinecraft().thePlayer.posY, Minecraft.getMinecraft().thePlayer.posZ});
@@ -95,13 +99,13 @@ public class BlockInMod extends Mod {
                 Minecraft.getMinecraft().rightClickMouse();
                 break;
             case 8:
+                Minecraft.getMinecraft().thePlayer.setRotation(yawOld,pitchOld);
                 Minecraft.getMinecraft().thePlayer.currentIndex = 0;
+                this.setEnable(false);
                 Minecraft.getMinecraft().rightClickMouse();
-                this.setEnable(Boolean.FALSE);
-                break;
-
 
 
         }
     }
+
 }
