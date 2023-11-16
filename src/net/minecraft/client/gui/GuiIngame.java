@@ -137,7 +137,8 @@ public class GuiIngame extends Gui
         else
         {
 
-            Client.modManager.getEnabledMods().forEach(Mod::render);
+            Client.modManager.getEnabledMods().forEach(Mod::draw);
+
             this.renderTooltip(scaledresolution, partialTicks);
         }
 

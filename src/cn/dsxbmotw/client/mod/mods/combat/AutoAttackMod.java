@@ -2,6 +2,7 @@ package cn.dsxbmotw.client.mod.mods.combat;
 
 import cn.dsxbmotw.client.mod.Mod;
 import cn.dsxbmotw.client.mod.api.CalcDirectionYawAndPitch;
+import cn.dsxbmotw.client.mod.mods.Category;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -12,7 +13,7 @@ import java.util.Random;
 
 public class AutoAttackMod extends Mod {
     public AutoAttackMod() {
-        super("AutoAttack");
+        super("AutoAttack", Category.COMBAT);
         setKey(Keyboard.KEY_R);
     }
 

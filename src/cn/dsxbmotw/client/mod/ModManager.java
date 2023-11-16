@@ -1,6 +1,7 @@
 package cn.dsxbmotw.client.mod;
 
 import cn.dsxbmotw.client.mod.mods.combat.AutoAttackMod;
+import cn.dsxbmotw.client.mod.mods.draw.TabMod;
 import cn.dsxbmotw.client.mod.mods.movement.SprintMod;
 import cn.dsxbmotw.client.mod.mods.render.LogoMod;
 import cn.dsxbmotw.client.mod.mods.render.ModListMod;
@@ -35,6 +36,7 @@ public class ModManager {
         mods.add(new AutoAttackMod());
         mods.add(new ScaffoldMod());
         mods.add(new BlockInMod());
+        mods.add(new TabMod());
     }
 
     public List<Mod> getEnabledMods() {

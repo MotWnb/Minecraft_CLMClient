@@ -2,6 +2,7 @@ package cn.dsxbmotw.client.mod.mods.render;
 
 import cn.dsxbmotw.client.Client;
 import cn.dsxbmotw.client.mod.Mod;
+import cn.dsxbmotw.client.mod.mods.Category;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.gui.ScaledResolution;
@@ -10,11 +11,11 @@ import java.util.List;
 
 public class ModListMod extends Mod {
     public ModListMod() {
-        super("ModList");
+        super("ModList", Category.RENDER);
     }
 
     @Override
-    public void render() {
+    public void draw() {
         ScaledResolution scaledResolution = new ScaledResolution(Minecraft.getMinecraft());
         int width = scaledResolution.getScaledWidth();
         int height = scaledResolution.getScaledHeight();

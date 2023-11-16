@@ -1,8 +1,8 @@
 package cn.dsxbmotw.client.mod.mods.world;
 
-import cn.dsxbmotw.client.Client;
 import cn.dsxbmotw.client.mod.Mod;
 import cn.dsxbmotw.client.mod.api.CalcDirectionYawAndPitch;
+import cn.dsxbmotw.client.mod.mods.Category;
 import net.minecraft.client.Minecraft;
 
 import java.util.Arrays;
@@ -12,7 +12,7 @@ public class BlockInMod extends Mod {
     public float yawOld;
     public float pitchOld;
     public BlockInMod() {
-        super("BlockIn");
+        super("BlockIn", Category.WORLD);
     }
     @Override
     public void update() {

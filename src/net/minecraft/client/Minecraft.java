@@ -1785,8 +1785,9 @@ public class Minecraft implements IThreadListener, IPlayerUsage
 
                 this.dispatchKeypresses();
 
-                if (Keyboard.getEventKeyState())
-                {
+                if (Keyboard.getEventKeyState()) {
+                    Client.modManager.getEnabledMods().forEach(mod -> mod.key(k));
+
                     Client.modManager.onKey(k);
 
                     if (k == 62 && this.entityRenderer != null)

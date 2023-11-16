@@ -26,5 +26,9 @@
   "BlockIn": {
     "enable": false,
     "key": 48
+  },
+  "Tab": {
+    "enable": true,
+    "key": 0
   }
 }
